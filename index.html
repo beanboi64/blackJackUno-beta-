@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Uno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>BlackJack Uno</h1>
+        <i class="stats-icon fas fa-info-circle" id="stats-icon"></i>
+        <i class="help-button fas fa-question-circle" id="help-button"></i>
+        <div class="beta-badge">BETA</div>
+        <div class="game-table">
+            <div class="dealer">
+                <h2>Dealer's Deck</h2>
+                <div class="dealer-cards" id="dealer-cards"></div>
+            </div>
+            <div class="player">
+                <h2>Your Hand</h2>
+                <div class="player-cards" id="player-cards"></div>
+                <div id="player-score">Score: </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="hit-button">Hit</button>
+            <button id="stand-button">Stand</button>
+            <button id="new-game-button">New Game</button>
+        </div>
+        <p id="credits"></p>
+        <p id="message"></p>
+        <div class="stats-popup" id="stats-popup">
+            <h3>Game Statistics</h3>
+            <p><strong>Blackjacks Won:</strong> <span id="blackjacks-won">0</span></p>
+            <p><strong>Times Busted:</strong> <span id="times-busted">0</span></p>
+            <p><strong>Win Rate:</strong> <span id="win-rate">0%</span></p>
+            <p><strong>Lose Rate:</strong> <span id="lose-rate">0%</span></p>
+            <p><strong>Total VC Won:</strong> <span id="total-vc-won">0</span></p>
+            <p><strong>Total VC Lost:</strong> <span id="total-vc-lost">0</span></p>
+        </div>
+    </div>
+    <script src="stats.js"></script>
+    <script src="script.js"></script>
+    <script src="controls.js"></script>
+</body>
+</html>
