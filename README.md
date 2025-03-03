@@ -49,7 +49,7 @@ To run the game locally:
    git clone https://github.com/your-username/blackJackUno-beta-.git
 2. **Navigate to the Project Directory**:
    ```bash
-   cd blackjack-uno
+   cd blackJackUno-beta-
 3. **Open the Game**:
    - Simply open the `index.html` file in your preferred web browser.
 
