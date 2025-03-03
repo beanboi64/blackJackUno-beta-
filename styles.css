@@ -1,4 +1,3 @@
-/* Define custom fonts for the project */
 @font-face {
     font-family: 'beyondWonderland';
     src: url('fonts/beyondWonderland.ttf') format('truetype');
@@ -12,7 +11,7 @@
     src: url('fonts/iItikadBaik.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'ilcika ';
+    font-family: 'ilcika';
     src: url('fonts/iIcika.ttf') format('truetype');
 }
 @font-face {
@@ -23,555 +22,494 @@
     font-family: 'skullHunter';
     src: url('fonts/skullHunter.otf') format('opentype');
 }
-
-/* Reset default browser styles */
+/* this sets default styles for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Default font for the entire page */
+    font-family: Arial, sans-serif;
 }
-
-/* Style the body of the webpage */
 body {
-    background-color: #228b22; /* Green background color */
-    color: #ffffff; /* White text color */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 100vh; /* Full viewport height */
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Remove tap highlight on mobile */
+    background-color: #228b22; 
+    color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
-/* Style the main game container */
+/* this styles the main container for the game */
 .game-container {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center; /* Center text inside the container */
-    padding: 20px; /* Add space around the container */
-    margin-top: -90px; /* Adjust vertical position */
-    width: 90ch; /* Set width relative to font size */
-    height: 55.5ch; /* Set height relative to font size */
-    border: 2px solid #8b4513; /* Add a brown border */
-    background-color: #f4a460; /* Sand-colored background */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin-top: -90px;
+    width: 90ch;
+    height: 55.5ch;
+    border: 2px solid #8b4513; 
+    background-color: #f4a460; 
 }
-
-/* Style the main title of the game */
+/* this styles the main title of the game */
 h1 {
-    font-family: 'skullHunter'; /* Custom font for the title */
-    letter-spacing: 3px; /* Add spacing between letters */
-    font-size: 10rem; /* Large font size for emphasis */
-    margin-bottom: 20px; /* Space below the title */
-    color: #ffff00; /* Yellow text color */
+    font-family: 'skullHunter';
+    letter-spacing: 3px;
+    font-size: 10rem;
+    margin-bottom: 20px;
+    color: #ffff00; 
 }
-
-/* Style the game table */
+/* this styles the game table */
 .game-table {
-    display: grid; /* Use grid layout for structure */
-    gap: 20px; /* Add space between grid items */
-    margin-bottom: 20px; /* Space below the table */
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
 }
-
-/* Style headers inside the game table */
+/* this styles the headings inside the game table */
 .game-table h2 {
-    font-family: 'japanTokyo'; /* Custom font for headers */
-    color: #ffa500; /* Orange text color */
+    font-family: 'japanTokyo';
+    color: #ffa500; 
 }
-
-/* Style the dealer's area */
+/* this styles the dealer section */
 .dealer {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    gap: 20px; /* Add space between elements */
-    width: 100%; /* Full width of parent container */
-    height: 12ch; /* Set height relative to font size */
-    padding: 10px; /* Add space inside the container */
-    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
-    color: #ffffff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 12ch;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
 }
-
-/* Style the player's area */
+/* this styles the player section */
 .player {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Distribute elements evenly */
-    width: 100%; /* Full width of parent container */
-    height: 12ch; /* Set height relative to font size */
-    padding: 10px; /* Add space inside the container */
-    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
-    color: #ffffff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 12ch;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
 }
-
-/* Style the player's score */
+/* this styles the player score */
 #player-score {
-    font-family: 'iItikadBaik'; /* Custom font for the score */
-    font-size: 20px; /* Font size for readability */
-    color: #ffd700; /* Gold text color */
+    font-family: 'iItikadBaik';
+    font-size: 20px;
+    color: #ffd700;
 }
-
-/* Style the dealer's cards */
+/* this styles the dealer cards */
 .dealer-cards {
-    font-family: 'iItikadBaik'; /* Custom font for the cards */
-    font-size: 50px; /* Large font size for visibility */
-    color: #ffd700; /* Gold text color */
-    margin-top: -10px; /* Adjust vertical position */
+    font-family: 'iItikadBaik';
+    font-size: 50px;
+    color: #ffd700; 
+    margin-top: -10px;
 }
-
-/* Style the player's cards */
+/* this styles the player cards */
 .player-cards {
-    font-family: 'iItikadBaik'; /* Custom font for the cards */
-    font-size: 20px; /* Font size for readability */
-    word-spacing: 10px; /* Add space between words */
-    color: #ffd700; /* Gold text color */
+    font-family: 'iItikadBaik';
+    font-size: 20px;
+    word-spacing: 10px;
+    color: #ffd700; 
 }
-
-/* Style control buttons (e.g., Hit, Stand) */
+/* this styles the control buttons */
 .controls button {
-    margin: 10px; /* Add space around buttons */
-    padding: 15px 20px; /* Add space inside buttons */
-    border: none; /* Remove borders */
-    background-color: #ffa500; /* Orange background color */
-    color: #000000; /* Black text color */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s; /* Smooth transition effect */
+    margin: 10px;
+    padding: 15px 20px;
+    border: none;
+    background-color: #ffa500; 
+    color: #000000; 
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-
-/* Change button color on hover */
+/* this styles the hover effect for buttons */
 .controls button:hover {
-    background-color: #ffd700; /* Gold background color */
+    background-color: #ffd700; 
 }
-
-/* Style the credits section */
+/* this styles the credits text */
 #credits {
-    margin-top: 10px; /* Space above the credits */
-    font-family: 'skullHunter'; /* Custom font for credits */
-    font-size: 26px; /* Font size for emphasis */
-    color: #f4a460; /* Sand-colored text */
+    margin-top: 10px;
+    font-family: 'skullHunter';
+    font-size: 26px;
+    color: #f4a460; 
 }
-
-/* Style messages displayed to the player */
+/* this styles the message text */
 #message {
-    margin-top: 10px; /* Space above the message */
-    font-family: 'japanTokyo'; /* Custom font for messages */
-    font-size: 30px; /* Font size for emphasis */
-    color: #ffd700; /* Gold text color */
+    margin-top: 10px;
+    font-family: 'japanTokyo';
+    font-size: 30px;
+    color: #ffd700; /* White text */
 }
-
-/* Style the stats icon */
+/* this styles the hit, stand, and new game buttons */
+#hit-button, #stand-button, #new-game-button {
+    font-family: 'japanTokyo';
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000; 
+}
+/* this styles the stats icon */
 .stats-icon {
-    position: absolute; /* Position relative to parent */
-    top: 10px; /* Vertical position */
-    right: 10px; /* Horizontal position */
-    font-size: 24px; /* Font size for visibility */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    color: #ffd700; /* Gold text color */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffd700; 
 }
-
-/* Style the stats popup */
+/* this styles the stats popup */
 .stats-popup {
-    display: none; /* Hidden by default */
-    position: absolute; /* Position relative to parent */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Ensure perfect centering */
-    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
-    color: #ffffff; /* White text color */
-    padding: 20px; /* Add space inside the popup */
-    width: 300px; /* Fixed width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-    z-index: 1000; /* Ensure it appears above other elements */
-    text-align: center; /* Center text inside the popup */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
 }
-
-/* Style the heading of the stats popup */
+/* this styles the heading in the stats popup */
 .stats-popup h3 {
-    font-family: 'skullHunter'; /* Custom font for the heading */
-    font-size: 2.5rem; /* Large font size for emphasis */
-    letter-spacing: 3px; /* Add spacing between letters */
-    margin-bottom: 10px; /* Space below the heading */
+    font-family: 'skullHunter';
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
-
-/* Style strong tags inside the stats popup */
+/* this styles the strong text in the stats popup */
 .stats-popup p strong {
-    font-family: 'japanTokyo'; /* Custom font for emphasis */
-    font-size: 16px; /* Font size for readability */
-    letter-spacing: 2px; /* Add spacing between letters */
-    color: #ffd700; /* Gold text color */
-    margin: 5px 0; /* Space above and below */
+    font-family: 'japanTokyo';
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #ffd700;
+    margin: 5px 0;
 }
-
-/* Style positive stats (e.g., wins) */
+/* this styles the positive stats in the popup */
 #blackjacks-won, #win-rate, #total-vc-won {
-    font-family: 'iItikadBaik'; /* Custom font for stats */
-    font-size: 18px; /* Font size for readability */
-    letter-spacing: 2px; /* Add spacing between letters */
-    color: #2bff00; /* Bright green text color */
+    font-family: 'iItikadBaik';
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #2bff00;
 }
-
-/* Style negative stats (e.g., losses) */
+/* this styles the negative stats in the popup */
 #times-busted, #lose-rate, #total-vc-lost {
-    font-family: 'iItikadBaik'; /* Custom font for stats */
-    font-size: 18px; /* Font size for readability */
-    letter-spacing: 2px; /* Add spacing between letters */
-    color: #ff0000; /* Red text color */
+    font-family: 'iItikadBaik';
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ff0000;
 }
-
-/* Style the tutorial overlay */
+/* this styles the tutorial overlay */
 .tutorial-overlay {
-    display: none; /* Hidden by default */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    position: fixed; /* Fixed position on screen */
-    top: 0; /* Top edge of the screen */
-    left: 0; /* Left edge of the screen */
-    right: 0; /* Right edge of the screen */
-    bottom: 0; /* Bottom edge of the screen */
-    background-color: rgba(0, 0, 0, 0.85); /* Dark semi-transparent background */
-    z-index: 1000; /* Ensure it appears above other elements */
-    overflow-y: auto; /* Enable scrolling if content overflows */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    overflow-y: auto;
 }
-
-/* Style the tutorial content */
+/* this styles the tutorial content */
 .tutorial-content {
-    position: relative; /* Position relative to parent */
-    background-color: #f4a460; /* Sand-colored background */
-    border: 3px solid #8b4513; /* Brown border */
-    color: #000; /* Black text color */
-    width: 80%; /* Width relative to parent */
-    max-width: 600px; /* Maximum width */
-    margin: 30px auto; /* Center horizontally */
-    padding: 20px; /* Add space inside the container */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    position: relative;
+    top: 0;
+    bottom: 0;
+    background-color: #f4a460;
+    border: 3px solid #8b4513;
+    color: #000;
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
-/* Style the heading of the tutorial */
+/* this styles the heading in the tutorial content */
 .tutorial-content h2 {
-    font-family: 'japanTokyo'; /* Custom font for the heading */
-    color: #8b4513; /* Brown text color */
-    text-align: center; /* Center text */
-    margin-bottom: 15px; /* Space below the heading */
+    font-family: 'japanTokyo';
+    color: #8b4513;
+    text-align: center;
+    margin-bottom: 15px;
 }
-
-/* Style paragraphs inside the tutorial */
+/* this styles the paragraphs in the tutorial content */
 .tutorial-content p {
-    font-family: 'iItikadBaik'; /* Custom font for paragraphs */
-    font-size: 20px; /* Font size for readability */
-    line-height: 1.5; /* Add space between lines */
-    margin-bottom: 5px; /* Space below paragraphs */
-    color: #333; /* Dark gray text color */
+    font-family: 'iItikadBaik';
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #333;
 }
-
-/* Style lists inside the tutorial */
+/* this styles the unordered list in the tutorial content */
 .tutorial-content ul {
-    margin-left: 20px; /* Indent list items */
-    margin-bottom: 5px; /* Space below lists */
+    margin-left: 20px;
+    margin-bottom: 5px;
 }
-
-/* Style list items inside the tutorial */
+/* this styles the list items in the tutorial content */
 .tutorial-content li {
-    font-family: 'iItikadBaik'; /* Custom font for list items */
-    font-size: 18px; /* Font size for readability */
-    text-align: left; /* Align text to the left */
-    color: #8b4513; /* Brown text color */
-    margin-bottom: 5px; /* Space below list items */
-    list-style-type: none; /* Remove default bullet points */
-    position: relative; /* Position relative to parent */
-    padding-left: 24px; /* Add space for icons */
+    font-family: 'iItikadBaik';
+    font-size: 18px;
+    text-align: left;
+    color: #8b4513;
+    margin-bottom: 5px;
+    list-style-type: none; 
+    position: relative; 
+    padding-left: 24px; 
 }
-
-/* Add icons before list items */
+/* this styles the icon before list items */
 .tutorial-content li::before {
-    content: "\f863"; /* Unicode for fan icon */
-    font-family: "Font Awesome 6 Free"; /* Font family for icons */
-    font-weight: 900; /* Use solid version of the icon */
-    position: absolute; /* Position absolute within parent */
-    left: 0; /* Position at the start of the item */
-    top: 0; /* Align with the top of the item */
-    color: #8b4513; /* Brown icon color */
-    font-size: 14px; /* Icon size */
+    content: "\f863"; /* Unicode for the fan icon */
+    font-family: "Font Awesome 6 Free"; /* Ensure the correct font family is used */
+    font-weight: 900; /* Use the solid version of the icon */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #8b4513; 
+    font-size: 14px; /* Adjust the size of the icon as needed */
 }
-
-/* Style highlighted text inside the tutorial */
+/* this styles highlighted text in the tutorial */
 .tutorial-content .highlight {
-    font-family: 'iItikadBaik'; /* Custom font for highlights */
-    font-weight: bold; /* Bold text */
-    font-size: 18px; /* Font size for emphasis */
-    color: #8b0000; /* Dark red text color */
+    font-family: 'iItikadBaik';
+    font-weight: bold;
+    font-size: 18px;
+    color: #8B0000;
 }
-
-/* Style secondary highlights inside the tutorial */
+/* this styles another type of highlighted text */
 .tutorial-content .highlight2 {
-    font-family: 'iItikadBaik'; /* Custom font for highlights */
-    font-weight: bold; /* Bold text */
-    font-size: 20px; /* Larger font size for emphasis */
+    font-family: 'iItikadBaik';
+    font-weight: bold;
+    font-size: 20px;
 }
-
-/* Style the close button for the tutorial */
+/* this styles the close button for the tutorial */
 .close-tutorial {
-    position: absolute; /* Position relative to parent */
-    top: 6px; /* Vertical position */
-    right: 12px; /* Horizontal position */
-    font-size: 24px; /* Font size for visibility */
-    color: #8b0000; /* Dark red text color */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    background: none; /* No background */
-    border: none; /* No border */
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    font-size: 24px;
+    color: #8B0000;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
-
-/* Style navigation buttons for the tutorial */
+/* this styles the navigation buttons in the tutorial */
 .tutorial-nav {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Distribute buttons evenly */
-    margin-top: 20px; /* Space above the buttons */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-
-/* Style individual navigation buttons */
+/* this styles the tutorial navigation buttons */
 .tutorial-nav button {
-    font-family: 'japanTokyo'; /* Custom font for buttons */
-    padding: 8px 15px; /* Add space inside buttons */
-    background-color: #ffa500; /* Orange background color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'japanTokyo';
+    padding: 8px 15px;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
-/* Change button color on hover */
+/* this styles the hover effect for tutorial buttons */
 .tutorial-nav button:hover {
-    background-color: #ffd700; /* Gold background color */
+    background-color: #ffd700;
 }
-
-/* Hide inactive tutorial pages */
+/* this hides inactive tutorial pages */
 .tutorial-page {
-    display: none; /* Hidden by default */
+    display: none;
 }
-
-/* Show active tutorial pages */
+/* this shows the active tutorial page */
 .tutorial-page.active {
-    display: block; /* Visible when active */
+    display: block;
 }
-
-/* Style the beta badge */
+/* Beta Badge Styles */
 .beta-badge {
-    position: absolute; /* Position relative to parent */
-    top: 20px; /* Vertical position */
-    left: 20px; /* Horizontal position */
-    background-color: #ff6b6b; /* Light red background */
-    color: white; /* White text color */
-    padding: 5px 10px; /* Add space inside the badge */
-    border-radius: 15px; /* Rounded corners */
-    font-family: 'japanTokyo'; /* Custom font for the badge */
-    font-size: 14px; /* Font size for readability */
-    transform: rotate(-10deg); /* Rotate slightly for design */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-    z-index: 10; /* Ensure it appears above other elements */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #FF6B6B;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-family: 'japanTokyo';
+    font-size: 14px;
+    transform: rotate(-10deg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 10;
 }
-
-/* Style the help button */
+/* this styles the help button */
 .help-button {
-    position: absolute; /* Position relative to parent */
-    top: 10px; /* Vertical position */
-    right: 50px; /* Horizontal position */
-    font-size: 24px; /* Font size for visibility */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    color: #ffd700; /* Gold text color */
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffd700;
 }
-
-/* Media query for smaller screens (tablets and phones) */
+/* Media query for small tablets and large phones */
 @media screen and (max-width: 768px) {
     body {
-        padding: 10px; /* Add space around the body */
-        height: auto; /* Allow height to adjust dynamically */
-        min-height: 100vh; /* Minimum height equals viewport height */
+        padding: 10px;
+        height: auto;
+        min-height: 100vh;
     }
-
     .game-container {
-        width: 100%; /* Full width of the screen */
-        height: auto; /* Allow height to adjust dynamically */
-        margin: 0; /* Remove margins */
-        padding: 50px 10px; /* Add space inside the container */
-        position: relative; /* Position relative to parent */
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 50px 10px;
+        position: relative;
     }
-
     h1 {
-        font-size: 4rem; /* Smaller font size for mobile */
-        margin-bottom: 15px; /* Adjust space below the title */
+        font-size: 4rem;
+        margin-bottom: 15px;
     }
-
     .game-table {
-        gap: 10px; /* Reduce space between grid items */
+        gap: 10px;
     }
-
     .dealer, .player {
-        height: 11ch; /* Adjust height for mobile */
-        min-height: 10ch; /* Minimum height */
-        padding: 8px; /* Reduce padding */
+        height: 11ch;
+        min-height: 10ch;
+        padding: 8px;
     }
-
     .dealer-cards {
-        font-size: 40px; /* Smaller font size for mobile */
+        font-size: 40px;
     }
-
     .player-cards {
-        font-size: 18px; /* Smaller font size for mobile */
+        font-size: 18px;
     }
-
     .controls {
-        display: flex; /* Use flexbox for layout */
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
     .controls button {
-        width: 80%; /* Adjust button width */
-        margin: 5px 0; /* Adjust space between buttons */
-        padding: 12px 10px; /* Adjust padding inside buttons */
+        width: 80%;
+        margin: 5px 0;
+        padding: 12px 10px;
     }
-
     #credits {
-        position: absolute; /* Position relative to parent */
-        bottom: 5px; /* Vertical position */
-        font-size: 30px; /* Smaller font size for mobile */
-        color: #ff6b6b; /* Light red text color */
-        width: 100%; /* Full width of the screen */
-        left: 0; /* Align with the left edge */
-        text-align: center; /* Center text */
-        padding: 5px; /* Add space inside */
-        z-index: 10; /* Ensure it appears above other elements */
+        position: absolute;
+        bottom: 5px;
+        font-size: 30px;
+        color: #FF6B6B;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding: 5px;
+        z-index: 10;
     }
-
     #message {
-        position: fixed; /* Fixed position on screen */
-        bottom: 5px; /* Vertical position */
-        font-size: 25px; /* Smaller font size for mobile */
-        width: 100%; /* Full width of the screen */
-        left: 0; /* Align with the left edge */
-        text-align: center; /* Center text */
-        padding: 5px; /* Add space inside */
-        z-index: 10; /* Ensure it appears above other elements */
+        position: fixed;
+        bottom: 5px;
+        font-size: 25px;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding: 5px;
+        z-index: 10;
     }
-
-    /* Adjust stats popup for mobile */
     .stats-popup {
-        width: 90%; /* Adjust width for mobile */
-        max-width: 300px; /* Maximum width */
+        width: 90%;
+        max-width: 300px;
     }
-
-    /* Adjust beta badge for mobile */
     .beta-badge {
-        position: absolute; /* Position relative to parent */
-        top: 10px; /* Vertical position */
-        left: 10px; /* Horizontal position */
-        background-color: #ff6b6b; /* Light red background */
-        color: white; /* White text color */
-        padding: 3px 8px; /* Adjust padding */
-        border-radius: 10px; /* Rounded corners */
-        font-size: 12px; /* Smaller font size for mobile */
-        font-weight: bold; /* Bold text */
-        z-index: 10; /* Ensure it appears above other elements */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #ff6b6b;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        z-index: 10;
     }
-
-    /* Adjust stats icon for mobile */
     .stats-icon {
-        position: absolute; /* Position relative to parent */
-        top: 10px; /* Vertical position */
-        right: 10px; /* Horizontal position */
-        margin: 0; /* Remove margins */
-        font-size: 24px; /* Font size for visibility */
-        cursor: pointer; /* Change cursor to pointer on hover */
-        color: #8b0000; /* Dark red text color */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin: 0;
+        font-size: 24px;
+        cursor: pointer;
+        color: #8b0000;
     }
-
-    /* Adjust help button for mobile */
     .help-button {
-        position: absolute; /* Position relative to parent */
-        top: 10px; /* Vertical position */
-        right: 50px; /* Horizontal position */
-        margin: 0; /* Remove margins */
-        font-size: 24px; /* Font size for visibility */
-        cursor: pointer; /* Change cursor to pointer on hover */
-        color: #8b0000; /* Dark red text color */
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        margin: 0;
+        font-size: 24px;
+        cursor: pointer;
+        color: #8b0000;
     }
-
-    /* Adjust tutorial overlay for mobile */
     .tutorial-overlay {
-        position: fixed; /* Fixed position on screen */
-        top: 0; /* Top edge of the screen */
-        left: 0; /* Left edge of the screen */
-        right: 0; /* Right edge of the screen */
-        bottom: 0; /* Bottom edge of the screen */
-        background-color: rgba(0, 0, 0, 0.85); /* Dark semi-transparent background */
-        display: none; /* Hidden by default */
-        justify-content: center; /* Center content horizontally */
-        align-items: center; /* Center content vertically */
-        z-index: 1000; /* Ensure it appears above other elements */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
     }
-
-    /* Adjust tutorial content for mobile */
     .tutorial-content {
-        background-color: #f4a460; /* Sand-colored background */
-        border: 2px solid #8b4513; /* Brown border */
-        width: 90%; /* Adjust width for mobile */
-        max-width: 350px; /* Maximum width */
-        padding: 20px; /* Add space inside */
-        text-align: center; /* Center text */
-        position: relative; /* Position relative to parent */
+        background-color: #f4a460;
+        border: 2px solid #8b4513;
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+        text-align: center;
+        position: relative;
     }
-
-    /* Adjust tutorial heading for mobile */
     .tutorial-content h3 {
-        font-family: 'skullHunter'; /* Custom font for the heading */
-        font-size: 2rem; /* Smaller font size for mobile */
-        color: #ffff00; /* Yellow text color */
-        margin-bottom: 15px; /* Adjust space below the heading */
+        font-family: 'skullHunter';
+        font-size: 2rem;
+        color: #ffff00;
+        margin-bottom: 15px;
     }
-
-    /* Adjust tutorial paragraphs for mobile */
     .tutorial-content p {
-        font-family: 'iItikadBaik'; /* Custom font for paragraphs */
-        color: #000; /* Black text color */
-        margin-bottom: 15px; /* Adjust space below paragraphs */
-        font-size: 16px; /* Smaller font size for mobile */
-        line-height: 1.4; /* Adjust line height */
+        font-family: 'iItikadBaik';
+        color: #000;
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 1.4;
     }
-
-    /* Adjust tutorial navigation buttons for mobile */
+    .tutorial-nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
     .tutorial-nav button {
-        padding: 8px 15px; /* Adjust padding inside buttons */
-        background-color: #ffa500; /* Orange background color */
-        color: #000; /* Black text color */
-        border: none; /* No border */
-        cursor: pointer; /* Change cursor to pointer on hover */
+        padding: 8px 15px;
+        background-color: #ffa500;
+        color: #000;
+        border: none;
+        cursor: pointer;
     }
-
-    /* Adjust tutorial close button for mobile */
     .tutorial-close {
-        position: absolute; /* Position relative to parent */
-        top: 5px; /* Vertical position */
-        right: 10px; /* Horizontal position */
-        font-size: 20px; /* Font size for visibility */
-        cursor: pointer; /* Change cursor to pointer on hover */
-        color: #000; /* Black text color */
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #000;
     }
-
-    /* Style tutorial dots navigation */
     .tutorial-dots {
-        display: flex; /* Use flexbox for layout */
-        justify-content: center; /* Center dots */
-        margin-top: 15px; /* Space above the dots */
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
     }
-
-    /* Style individual dots */
     .dot {
-        height: 10px; /* Dot height */
-        width: 10px; /* Dot width */
-        background-color: #bbb; /* Gray dot color */
-        border-radius: 50%; /* Make dots circular */
-        margin: 0 5px; /* Space between dots */
+        height: 10px;
+        width: 10px;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 0 5px;
     }
-
-    /* Style active dot */
     .active-dot {
-        background-color: #ffa500; /* Orange dot color */
+        background-color: #ffa500;
     }
 }
